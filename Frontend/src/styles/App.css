@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #4b1c71;
+  color: #fff0ff;
+}
+
+/* CONTENEDOR GENERAL */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* HOME */
+
+.home {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 90px;
+  color: #fff0ff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #dbb6ee;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* BOTONES */
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background: #7f4ca5;
+  color: #fff0ff;
+
+  border: none;
+  border-radius: 14px;
+
+  padding: 14px 28px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b57edc;
+  transform: translateY(-3px);
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+.navbar h1 {
+  font-size: 45px;
+  color: #fff0ff;
+}
+
+/* FORMULARIO */
+
+.formulario {
+  width: 420px;
+
+  margin: auto;
+
+  background: rgba(255, 240, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 240, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.formulario input {
+  background: #7f4ca5;
+
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  color: #fff0ff;
+
+  font-size: 16px;
+}
+
+.formulario input::placeholder {
+  color: #dbb6ee;
+}
+
+/* LISTA */
+
+.lista {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+/* CARDS */
+
+.card {
+  background: linear-gradient(
+    145deg,
+    #7f4ca5,
+    #4b1c71
+  );
+
+  border-radius: 25px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 32px;
+  color: #fff0ff;
+}
+
+.card p {
+  font-size: 18px;
+  color: #dbb6ee;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
